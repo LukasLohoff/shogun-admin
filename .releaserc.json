@@ -1,6 +1,6 @@
 {
   "branches": [
-    "introduce-semantic-release", "main"
+    "introduce-semantic-release"
   ],
   "plugins": [
     [
