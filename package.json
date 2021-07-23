@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/terrestris/shogun-admin.git"
+    "url": "git+https://github.com/LukasLohoff/shogun-admin.git"
   },
   "author": "terrestris GmbH & Co. KG <info@terrestris.de>",
   "keywords": [
@@ -28,9 +28,9 @@
   ],
   "license": "Apache-2.0 ",
   "bugs": {
-    "url": "https://github.com/terrestris/shogun-admin/issues"
+    "url": "https://github.com/LukasLohoff/shogun-admin/issues"
   },
-  "homepage": "https://github.com/terrestris/shogun-admin#readme",
+  "homepage": "https://github.com/LukasLohoff/shogun-admin#readme",
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "@monaco-editor/react": "^4.0.11",
