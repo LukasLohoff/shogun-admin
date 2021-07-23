@@ -1,0 +1,55 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          { "type": "breaking", "release": "major" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "config", "release": "patch" },
+          { "type": "norelease", "release": false },
+          { "type": "test", "release": false }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "header": "Changelog of shogun-admin",
+          "types": [
+            {"type": "feat", "section": "Features"},
+            {"type": "fix", "section": "Bugfixes"},
+            {"type": "chore", "section": "Dependencies"},
+            {"type": "docs", "hidden": true},
+            {"type": "style", "hidden": true},
+            {"type": "refactor", "hidden": true},
+            {"type": "perf", "hidden": true},
+            {"type": "test", "hidden": true},
+            {"type": "breaking", "section": "Breaking changes"},
+            {"type": "config", "section": "Changes in configuration"}
+          ]
+        }
+      }
+    ],
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/exec", {
+        "publishCmd": "./util/publish.sh ${lastRelease.version} ${nextRelease.version}-SNAPSHOT 'Automatically release shogun admin'"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md", "package.json", "package-lock.json", "pom.xml"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}" 
+      }
+    ]
+  ]
+}
