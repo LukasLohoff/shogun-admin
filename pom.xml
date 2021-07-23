@@ -11,9 +11,9 @@
   <description>The shogun-admin client</description>
 
   <scm>
-    <url>https://github.com/terrestris/shogun-admin</url>
-    <connection>scm:git:git@github.com:terrestris/shogun-admin.git</connection>
-    <developerConnection>scm:git:git@github.com:terrestris/shogun-admin.git</developerConnection>
+    <url>https://github.com/LukasLohoff/shogun-admin</url>
+    <connection>scm:git:git@github.com:LukasLohoff/shogun-admin.git</connection>
+    <developerConnection>scm:git:git@github.com:LukasLohoff/shogun-admin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
