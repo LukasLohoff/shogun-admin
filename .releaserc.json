@@ -39,7 +39,7 @@
     "@semantic-release/changelog",
     [
       "@semantic-release/exec", {
-        "publishCmd": "./util/publish.sh ${lastRelease.version} ${nextRelease.version}-SNAPSHOT 'Automatically release shogun admin'"
+        "publishCmd": "./util/publish.sh 0.0.1 ${nextRelease.version}-SNAPSHOT 'Automatically release shogun admin'"
       }
     ],
     [
