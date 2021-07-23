@@ -1,9 +1,9 @@
 name: Release
 on:
   workflow_dispatch
-  push:
-    branches:
-      - introduce-semantic-release
+  # push:
+  #   branches:
+  #     - introduce-semantic-release
 jobs:
   release:
     name: Release
