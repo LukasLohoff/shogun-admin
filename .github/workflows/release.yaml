@@ -39,8 +39,7 @@ jobs:
         run: npm run build
       - name: Release 🚀
         env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
