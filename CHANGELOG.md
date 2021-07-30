@@ -1,3 +1,10 @@
+### [1.0.10](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.9...v1.0.10) (2021-07-30)
+
+
+### Bugfixes
+
+* use relative path ([991a4b9](https://github.com/LukasLohoff/shogun-admin/commit/991a4b9211809220ecc5db134a20779deed14aa3))
+
 ### [1.0.9](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.8...v1.0.9) (2021-07-30)
 
 
