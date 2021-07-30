@@ -1,3 +1,10 @@
+### [1.0.7](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.6...v1.0.7) (2021-07-30)
+
+
+### Bugfixes
+
+* fix empty jar ([22045ab](https://github.com/LukasLohoff/shogun-admin/commit/22045ab61d1ac287385c08f05fe41b0132b3b1aa))
+
 ### [1.0.6](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.5...v1.0.6) (2021-07-30)
 
 
