@@ -1,3 +1,10 @@
+### [1.0.4](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.3...v1.0.4) (2021-07-30)
+
+
+### Bugfixes
+
+* checkout origin main ([1c49e3f](https://github.com/LukasLohoff/shogun-admin/commit/1c49e3f2f2ec915d1a6b67f88bc9de8abee4b584))
+
 ### [1.0.3](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.2...v1.0.3) (2021-07-30)
 
 
