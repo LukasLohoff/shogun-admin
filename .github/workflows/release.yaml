@@ -41,8 +41,6 @@ jobs:
       - name: Copy build resources
         run: |
           ls dist
-          ls target/checkout/dist
-          ls /github/workspace/target/checkout/dist
           mkdir -p /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
           cp -R dist /home/runner/work/shogun-admin/shogun-admin/target/checkout
           ls /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
