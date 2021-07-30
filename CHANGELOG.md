@@ -1,3 +1,10 @@
+### [1.0.11](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.10...v1.0.11) (2021-07-30)
+
+
+### Bugfixes
+
+* copy resources 2 ([d69390a](https://github.com/LukasLohoff/shogun-admin/commit/d69390a36343b806b857f21d0c6a31369d1a6135))
+
 ### [1.0.10](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.9...v1.0.10) (2021-07-30)
 
 
