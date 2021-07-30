@@ -1,3 +1,10 @@
+### [1.0.13](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.12...v1.0.13) (2021-07-30)
+
+
+### Bugfixes
+
+* set localCheckout ([b25d22d](https://github.com/LukasLohoff/shogun-admin/commit/b25d22db60b03ae1a990a4819934bdabad590e2a))
+
 ### [1.0.12](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.11...v1.0.12) (2021-07-30)
 
 
