@@ -32,19 +32,12 @@ jobs:
         run: npm ci
       - name: Semantic Release 🚀
         uses: cycjimmy/semantic-release-action@v2
-        id: semantic   # Need an `id` for output variables
+        id: semantic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # - name: Pull commits
-      #   run: |
-      #     git fetch
-      #     git checkout origin/main
-      #     git status
       - name: Build 🏗️
-        run: npm run build -- --display errors-only
-      - name: logger
-        run: ls dist/*
+        run: npm run build -- --display=errors-only
       - name: Release
         uses: qcastel/github-actions-maven-release@master
         env:
