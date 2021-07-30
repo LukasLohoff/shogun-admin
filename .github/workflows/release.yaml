@@ -40,8 +40,12 @@ jobs:
         run: npm run build -- --display=errors-only
       - name: Copy build resources
         run: |
-          mkdir -p target/checkout/dist
-          cp -R dist target/checkout
+          ls dist
+          ls target/checkout/dist
+          ls /github/workspace/target/checkout/dist
+          mkdir -p /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
+          cp -R dist /home/runner/work/shogun-admin/shogun-admin/target/checkout
+          ls /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
       - name: Release
         uses: qcastel/github-actions-maven-release@v1.12.25
         env:
