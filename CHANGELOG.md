@@ -1,3 +1,10 @@
+### [1.0.3](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.2...v1.0.3) (2021-07-30)
+
+
+### Bugfixes
+
+* fetch git changes ([b082b4f](https://github.com/LukasLohoff/shogun-admin/commit/b082b4f1efece6365f8c760ad196d44a55142f89))
+
 ### [1.0.2](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.1...v1.0.2) (2021-07-30)
 
 
