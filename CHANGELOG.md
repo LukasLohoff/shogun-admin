@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.0...v1.0.1) (2021-07-30)
+
+
+### Bugfixes
+
+* set release branch ([46451e4](https://github.com/LukasLohoff/shogun-admin/commit/46451e4171fd4f73d38c51901fc0c9f39b27d599))
+
 ## 1.0.0 (2021-07-30)
 
 
