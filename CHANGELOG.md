@@ -1,3 +1,10 @@
+### [1.0.2](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.1...v1.0.2) (2021-07-30)
+
+
+### Bugfixes
+
+* set repo server credentials ([e49bc84](https://github.com/LukasLohoff/shogun-admin/commit/e49bc84077e0d606691f45ecf552485acc4a145f))
+
 ### [1.0.1](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.0...v1.0.1) (2021-07-30)
 
 
