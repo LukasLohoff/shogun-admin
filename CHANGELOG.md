@@ -1,3 +1,11 @@
+### [1.0.12](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.11...v1.0.12) (2021-07-30)
+
+
+### Bugfixes
+
+* remove ls ([c5d06de](https://github.com/LukasLohoff/shogun-admin/commit/c5d06de285a9743fecbbc2eb3f9c72c6c3ab3833))
+* silence webpack ([b90887f](https://github.com/LukasLohoff/shogun-admin/commit/b90887f184f8ee9bc03813559faec48f72443ee1))
+
 ### [1.0.11](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.10...v1.0.11) (2021-07-30)
 
 
