@@ -38,18 +38,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Pull commits
-        run: |
-          git fetch
-          git checkout origin/main
-          git status
+      # - name: Pull commits
+      #   run: |
+      #     git fetch
+      #     git checkout origin/main
+      #     git status
       - name: Release
         uses: qcastel/github-actions-maven-release@master
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
         with:
           release-branch-name: "main"
-          git-release-bot-name: "terrestris-mvn-release-bot"
+          git-release-bot-name: "semantic-release-bot"
           git-release-bot-email: "info@terrestris.de"
 
           maven-repo-server-id: terrestris-nexus
