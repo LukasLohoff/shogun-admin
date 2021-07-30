@@ -1,3 +1,10 @@
+### [1.0.8](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.7...v1.0.8) (2021-07-30)
+
+
+### Bugfixes
+
+* fix build and cleanup ([1f97f52](https://github.com/LukasLohoff/shogun-admin/commit/1f97f52c0790d9a7c97aef89f95a682c00c89cff))
+
 ### [1.0.7](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.6...v1.0.7) (2021-07-30)
 
 
