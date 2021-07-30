@@ -32,16 +32,8 @@ jobs:
         run: npm ci
       - name: Build 🏗️
         run: npm run build
-      # - name: Release 🚀
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #   run: npx semantic-release
-      - name: Semantic Release
+      - name: Semantic Release 🚀
         uses: cycjimmy/semantic-release-action@v2
-        with:
-          dry_run: true
         id: semantic   # Need an `id` for output variables
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
