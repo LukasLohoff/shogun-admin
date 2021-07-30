@@ -30,8 +30,6 @@ jobs:
           node-version: 14
       - name: Install dependencies ⏬
         run: npm ci
-      - name: Build 🏗️
-        run: npm run --silent build
       - name: Semantic Release 🚀
         uses: cycjimmy/semantic-release-action@v2
         id: semantic   # Need an `id` for output variables
@@ -43,6 +41,10 @@ jobs:
       #     git fetch
       #     git checkout origin/main
       #     git status
+      - name: Build 🏗️
+        run: npm run build -- --display errors-only
+      - name: logger
+        run: ls dist/*
       - name: Release
         uses: qcastel/github-actions-maven-release@master
         env:
