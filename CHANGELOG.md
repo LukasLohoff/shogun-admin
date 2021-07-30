@@ -1,3 +1,10 @@
+### [1.0.5](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.4...v1.0.5) (2021-07-30)
+
+
+### Bugfixes
+
+* set name to semantic-release-bot ([5ab554d](https://github.com/LukasLohoff/shogun-admin/commit/5ab554dcfd069a675a3efd6aff69ddf563314dc2))
+
 ### [1.0.4](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.3...v1.0.4) (2021-07-30)
 
 
