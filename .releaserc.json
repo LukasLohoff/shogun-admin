@@ -38,11 +38,6 @@
     ],
     "@semantic-release/changelog",
     [
-      "@semantic-release/exec", {
-        "successCmd": "::set-output name={releaseVersion}::{${lastRelease.version}} && ::set-output name={developmentVersion}::{${nextRelease.version}-SNAPSHOT}"
-      }
-    ],
-    [
       "@semantic-release/git",
       {
         "assets": [
