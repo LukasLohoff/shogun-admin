@@ -40,8 +40,8 @@ jobs:
         run: npm run build -- --display=errors-only
       - name: Copy build resources
         run: |
-          mkdir -p /github/workspace/target/checkout/dist
-          cp -R dist /github/workspace/target/checkout
+          mkdir -p target/checkout/dist
+          cp -R dist target/checkout
       - name: Release
         uses: qcastel/github-actions-maven-release@v1.12.25
         env:
