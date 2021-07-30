@@ -32,31 +32,31 @@ jobs:
         run: npm ci
       - name: Build 🏗️
         run: npm run build
-      - name: Release 🚀
+      # - name: Release 🚀
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: npx semantic-release
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          dry_run: true
+        id: semantic   # Need an `id` for output variables
         env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
       - name: Release
         uses: qcastel/github-actions-maven-release@master
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
         with:
-          git-release-bot-name: "bot-idhub"
-          git-release-bot-email: "bot@idhub.io"
-
-          # docker-registry-id: nexus.terrestris.de
-          # docker-registry-username: qcastel
-          # docker-registry-password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+          git-release-bot-name: "terrestris-mvn-release-bot"
+          git-release-bot-email: "info@terrestris.de"
 
           maven-args: "-Dmaven.javadoc.skip=true -DskipTests"
           
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          maven-development-version-number: ${{ env.MAVEN_DEVELOPMENT_VERSION }}
-          maven-release-version-number: ${{ env.MAVEN_RELEASE_VERSION }}
-
-          # gpg-enabled: true
-          # gpg-key-id: ${{ secrets.GPG_KEY_ID }}
-          # gpg-key: ${{ secrets.GPG_KEY }}
+          maven-development-version-number: 0.0.1-SNAPSHOT
+          maven-release-version-number: ${{ steps.semantic.outputs.new_release_version }}
