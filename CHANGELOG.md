@@ -1,3 +1,10 @@
+### [1.0.14](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.13...v1.0.14) (2021-07-30)
+
+
+### Bugfixes
+
+* run build via mvn ([e6b0964](https://github.com/LukasLohoff/shogun-admin/commit/e6b096429436545eaab55950f8a39ec4a7b6381b))
+
 ### [1.0.13](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.12...v1.0.13) (2021-07-30)
 
 
