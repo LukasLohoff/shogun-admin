@@ -43,6 +43,7 @@ jobs:
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
         with:
+          release-branch-name: "main"
           git-release-bot-name: "terrestris-mvn-release-bot"
           git-release-bot-email: "info@terrestris.de"
 
