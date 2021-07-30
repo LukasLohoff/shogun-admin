@@ -1,3 +1,10 @@
+### [1.0.15](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.14...v1.0.15) (2021-07-30)
+
+
+### Bugfixes
+
+* only run build once ([c3f6c81](https://github.com/LukasLohoff/shogun-admin/commit/c3f6c81c6069b249defb96b30d46cbaa7848ff73))
+
 ### [1.0.14](https://github.com/LukasLohoff/shogun-admin/compare/v1.0.13...v1.0.14) (2021-07-30)
 
 
