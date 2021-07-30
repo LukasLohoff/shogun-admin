@@ -54,7 +54,7 @@ jobs:
           
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          maven-development-version-number: : ${{ env.MAVEN_DEVELOPMENT_VERSION }}
+          maven-development-version-number: ${{ env.MAVEN_DEVELOPMENT_VERSION }}
           maven-release-version-number: ${{ env.MAVEN_RELEASE_VERSION }}
 
           # gpg-enabled: true
