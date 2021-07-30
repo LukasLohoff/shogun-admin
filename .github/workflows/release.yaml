@@ -36,14 +36,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # - name: Build 🏗️
-      #   run: npm run build > /dev/null
-      # - name: Copy build resources
-      #   run: |
-      #     ls dist
-      #     mkdir -p /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
-      #     cp -R dist /home/runner/work/shogun-admin/shogun-admin/target/checkout
-      #     ls /home/runner/work/shogun-admin/shogun-admin/target/checkout/dist
       - name: Build and release
         uses: qcastel/github-actions-maven-release@v1.12.25
         env:
