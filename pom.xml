@@ -49,16 +49,17 @@
 
     <resources>
       <resource>
-        <directory>build/</directory>
+        <directory>dist/</directory>
         <includes>
-          <include>resources/**</include>
-          <include>img/**</include>
+          <include>js/**</include>
+          <include>static/**</include>
           <include>*.ttf</include>
           <include>*.eot</include>
           <include>*.svg</include>
           <include>*.wof*</include>
           <include>app.js</include>
           <include>index.html</include>
+          <include>favicon.ico</include>
           <include>*.json</include>
         </includes>
       </resource>

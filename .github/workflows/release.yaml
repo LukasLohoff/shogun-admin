@@ -47,6 +47,7 @@ jobs:
         uses: qcastel/github-actions-maven-release@master
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
+          SKIP_GIT_SANITY_CHECK: true
         with:
           release-branch-name: "main"
           git-release-bot-name: "semantic-release-bot"
